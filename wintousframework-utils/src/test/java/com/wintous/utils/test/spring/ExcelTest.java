@@ -20,7 +20,7 @@ import com.wintous.common.utils.excel.JxlExcelServiceImpl;
 import com.wintous.common.utils.excel.Person;
 import com.wintous.common.utils.excel.Sex;
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(locations={"classpath:common/context-utils-application.xml"})
+@ContextConfiguration(locations={"classpath:common/context-common-application.xml"})
 public class ExcelTest extends AbstractJUnit4SpringContextTests {
 
 	@Autowired

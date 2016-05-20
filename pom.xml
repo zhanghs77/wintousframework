@@ -20,10 +20,23 @@
         <!--指定Maven用什么编码来呈现站点的HTML文件 -->
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <org.springframework.version>3.2.8.RELEASE</org.springframework.version>
+        <org.hibernate-version>3.6.10.Final</org.hibernate-version>
+        <org.springdata.version>1.4.1.RELEASE</org.springdata.version>
         <net.sourceforge.jexcelapi.version>2.6.12</net.sourceforge.jexcelapi.version>
         <junit.version>4.11</junit.version>
         <javax.servlet.version>2.5</javax.servlet.version>
+        <common-dbcp.version>1.4</common-dbcp.version>
+        <mysql-connector-java.version>5.1.31</mysql-connector-java.version>
+        <org.aspectj.version>1.7.2</org.aspectj.version>
+        <org.slf4j.version>1.7.7</org.slf4j.version>
    </properties>
+   <dependencies>
+		<dependency>
+		    <groupId>org.slf4j</groupId>
+		    <artifactId>slf4j-log4j12</artifactId>
+		    <version>${org.slf4j.version}</version>
+		</dependency>
+   </dependencies>
 <build>
         <finalName>wintousframework-root</finalName>
         <plugins>

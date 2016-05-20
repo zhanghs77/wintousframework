@@ -17,11 +17,32 @@
 	    <version>${org.springframework.version}</version>
 	    <scope>runtime</scope>
 	</dependency>
+	<dependency>
+    <groupId>commons-dbcp</groupId>
+    <artifactId>commons-dbcp</artifactId>
+    <version>${common-dbcp.version}</version>
+</dependency>
+	
 	<!-- spring持久层依赖 -->
 	<dependency>
-	    <groupId>org.springframework</groupId>
-	    <artifactId>spring-orm</artifactId>
-	    <version>${org.springframework.version}</version>
+		<groupId>org.springframework.data</groupId>
+		<artifactId>spring-data-jpa</artifactId>
+		<version>${org.springdata.version}</version>
+	</dependency>
+	<dependency>
+		<groupId>org.springframework</groupId>
+		<artifactId>spring-orm</artifactId>
+		<version>${org.springframework.version}</version>
+	</dependency>
+	<dependency>
+	    <groupId>mysql</groupId>
+	    <artifactId>mysql-connector-java</artifactId>
+	    <version>${mysql-connector-java.version}</version>
+	</dependency>
+	<dependency>
+		<groupId>org.aspectj</groupId>
+		<artifactId>aspectjweaver</artifactId>
+		<version>${org.aspectj.version}</version>
 	</dependency>
 	<!-- spring test依赖 -->
 	<dependency>
@@ -33,6 +54,27 @@
 	<dependency>
   		<groupId>com.wintousframework</groupId>
   		<artifactId>wintousframework-utils</artifactId>
+  		<version>${project.version}</version>
+  	</dependency>
+	<dependency>
+		<groupId>org.hibernate</groupId>
+		<artifactId>hibernate-entitymanager</artifactId>
+		<version>${org.hibernate-version}</version>
+	</dependency>
+  	 <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>${junit.version}</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+  		<groupId>com.wintousframework</groupId>
+  		<artifactId>wintousframework-config</artifactId>
+  		<version>${project.version}</version>
+  	</dependency>
+  	 <dependency>
+  		<groupId>com.wintousframework</groupId>
+  		<artifactId>wintousframework-model</artifactId>
   		<version>${project.version}</version>
   	</dependency>
   </dependencies>
