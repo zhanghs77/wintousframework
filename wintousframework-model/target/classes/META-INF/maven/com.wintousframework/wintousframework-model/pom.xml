@@ -9,9 +9,9 @@
   <artifactId>wintousframework-model</artifactId>
   <dependencies>
   		<dependency>
-			<groupId>org.hibernate</groupId>
-			<artifactId>hibernate-entitymanager</artifactId>
-			<version>${org.hibernate-version}</version>
+		    <groupId>org.hibernate</groupId>
+		    <artifactId>hibernate-entitymanager</artifactId>
+		    <version>${org.hibernate-version}</version>
 		</dependency>
   </dependencies>
 </project>

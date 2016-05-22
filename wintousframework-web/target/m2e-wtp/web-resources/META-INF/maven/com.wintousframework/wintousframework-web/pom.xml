@@ -25,7 +25,6 @@
 	    <groupId>org.springframework</groupId>
 	    <artifactId>spring-context</artifactId>
 	    <version>${org.springframework.version}</version>
-	    <scope>runtime</scope>
 	</dependency>
 	<!-- springmvc依赖 -->
 	<dependency>
@@ -42,8 +41,12 @@
    	   <groupId>javax.servlet</groupId> 
 	   <artifactId>servlet-api</artifactId> 
 	   <version>${javax.servlet.version}</version> 
-	   <scope>provided</scope> 
 	</dependency> 
+	<dependency>
+	    <groupId>javax.servlet</groupId>
+	    <artifactId>jstl</artifactId>
+	    <version>${jstl.version}</version>
+	</dependency>
 	<!-- spring test依赖 -->
 	<dependency>
 	    <groupId>org.springframework</groupId>
@@ -51,11 +54,26 @@
 	    <version>${org.springframework.version}</version>
 	    <scope>test</scope>
 	</dependency>
-	
+	<!-- 上传包依赖 -->
+	<dependency>
+	    <groupId>commons-fileupload</groupId>
+	    <artifactId>commons-fileupload</artifactId>
+	    <version>${commons-fileupload.version}</version>
+	</dependency>
 	<!-- 各模块包 -->
     <dependency>
     	<groupId>com.wintousframework</groupId>
     	<artifactId>wintousframework-model</artifactId>
+    	<version>${project.version}</version>
+    </dependency>
+    <dependency>
+    	<groupId>com.wintousframework</groupId>
+    	<artifactId>wintousframework-config</artifactId>
+    	<version>${project.version}</version>
+    </dependency>
+     <dependency>
+    	<groupId>com.wintousframework</groupId>
+    	<artifactId>wintousframework-interface</artifactId>
     	<version>${project.version}</version>
     </dependency>
     <dependency>

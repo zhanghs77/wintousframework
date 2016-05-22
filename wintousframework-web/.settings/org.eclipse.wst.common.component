@@ -7,19 +7,19 @@
         <dependent-module archiveName="wintousframework-model-1.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/wintousframework-model/wintousframework-model">
             <dependency-type>uses</dependency-type>
         </dependent-module>
+        <dependent-module archiveName="wintousframework-config-1.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/wintousframework-config/wintousframework-config">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="wintousframework-interface-1.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/wintousframework-interface/wintousframework-interface">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
         <dependent-module archiveName="wintousframework-core-1.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/wintousframework-core/wintousframework-core">
             <dependency-type>uses</dependency-type>
         </dependent-module>
         <dependent-module archiveName="wintousframework-persist-1.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/wintousframework-persist/wintousframework-persist">
             <dependency-type>uses</dependency-type>
         </dependent-module>
-        <dependent-module archiveName="wintousframework-interface-1.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/wintousframework-interface/wintousframework-interface">
-            <dependency-type>uses</dependency-type>
-        </dependent-module>
         <dependent-module archiveName="wintousframework-utils-1.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/wintousframework-utils/wintousframework-utils">
-            <dependency-type>uses</dependency-type>
-        </dependent-module>
-        <dependent-module archiveName="wintousframework-config-1.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/wintousframework-config/wintousframework-config">
             <dependency-type>uses</dependency-type>
         </dependent-module>
         <property name="context-root" value="wintousframework-web"/>

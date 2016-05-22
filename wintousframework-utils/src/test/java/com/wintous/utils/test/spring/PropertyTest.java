@@ -13,7 +13,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import com.wintous.common.utils.Property;
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(locations={"classpath:utils/context-utils-application.xml"})
+@ContextConfiguration(locations={"classpath:common/context-common-application.xml"})
 public class PropertyTest extends AbstractJUnit4SpringContextTests {
 	
 	@Resource
