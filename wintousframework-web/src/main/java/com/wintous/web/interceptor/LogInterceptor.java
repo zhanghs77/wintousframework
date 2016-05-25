@@ -20,6 +20,7 @@ public class LogInterceptor implements HandlerInterceptor {
 	@Override
 	public void postHandle(HttpServletRequest arg0, HttpServletResponse arg1, Object arg2, ModelAndView arg3)
 			throws Exception {
+		arg0.setAttribute("ctx",arg0.getContextPath());
 	}
 
 	@Override
