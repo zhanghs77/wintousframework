@@ -22,6 +22,7 @@ public class TestController extends BaseController {
 	}
 	@RequestMapping(value="/index.do",method=RequestMethod.GET)
 	public String doIndex(Model map){
+		logger.debug("---------------x");
 		Student student=studentService.getById(8);
 		System.out.println(student.getAge());
 		map.addAttribute("student",student);

@@ -28,5 +28,9 @@
   	    <property name="redirectHttp10Compatible" value="false"/>
 	</bean>
 	
+	<!-- 请求日志拦截 -->
+	<mvc:interceptors>  
+        <bean class="com.wintous.web.interceptor.LogInterceptor" />  
+	</mvc:interceptors>  
 	
 </beans>
