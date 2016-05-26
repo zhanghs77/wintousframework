@@ -11,7 +11,6 @@ import com.wintous.web.controller.base.BaseController;
 import com.wintousframework.service.StudentService;
 
 @Controller
-@RequestMapping("/test")
 public class TestController extends BaseController {
 
 	@Autowired
@@ -21,7 +20,7 @@ public class TestController extends BaseController {
 		log.debug(this.getClass().getName()+"初始化");
 	}
 	
-	@RequestMapping(value="/index.do",method=RequestMethod.GET)
+	@RequestMapping(value={"/","/index.do"},method=RequestMethod.GET)
 	public String doIndex(Model map){
 		Student student=studentService.getById(8);
 		log.debug(""+student.getAge());

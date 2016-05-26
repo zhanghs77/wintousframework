@@ -44,7 +44,7 @@
 		<![endif]-->
 	</head>
 
-	<body class="no-skin">
+	<body class="no-skin" ng-app="wintousapp">
 		<!-- #section:basics/navbar.layout -->
 		<div id="navbar" class="navbar navbar-default">
 			<script type="text/javascript">
@@ -423,9 +423,9 @@
 
 				<ul class="nav nav-list">
 					<li class="">
-						<a href="index.html">
+						<a href="#/computers">
 							<i class="menu-icon fa fa-tachometer"></i>
-							<span class="menu-text"> Dashboard </span>
+							<span class="menu-text" ng-click="alert('xx')"> Dashboard </span>
 						</a>
 
 						<b class="arrow"></b>
@@ -998,7 +998,7 @@
 					<!-- /section:settings.box -->
 					<div class="page-content-area">
 						<div class="row">
-							<div class="col-xs-12">
+							<div class="col-xs-12" ng-view>
 								<!-- PAGE CONTENT BEGINS -->
 
 								<!-- PAGE CONTENT ENDS -->
@@ -1059,8 +1059,14 @@
 		<script type="text/javascript">
 			if('ontouchstart' in document.documentElement) document.write("<script src='${ctx}/assets/js/jquery.mobile.custom.min.js'>"+"<"+"/script>");
 		</script>
+		<script>
+			var basePath='${ctx}';
+		</script>
 		<script src="${ctx}/assets/js/bootstrap.min.js"></script>
-
+		<script src="${ctx}/assets/js/angular/angular.min.js"></script>
+		<script src="${ctx}/assets/js/angular/angular-route.min.js"></script>
+		<script src="${ctx}/assets/js/angular/angular.localRoute.js"></script>
+		
 		<!-- page specific plugin scripts -->
 
 		<!-- ace scripts -->
@@ -1075,6 +1081,7 @@
 		<script type="text/javascript"> ace.vars['base'] = '${ctx}'; </script>
 		<script src="${ctx}/assets/js/ace/elements.onpage-help.js"></script>
 		<script src="${ctx}/assets/js/ace/ace.onpage-help.js"></script>
+		
 		
 	</body>
 </html>
