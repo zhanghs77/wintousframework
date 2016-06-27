@@ -33,6 +33,7 @@
    <module>wintousframework-persist</module>
   	<module>wintousframework-core</module>
     <module>wintousframework-web</module>
+      <module>wintousframework-common</module>
   </modules>
   
    <dependencies>
